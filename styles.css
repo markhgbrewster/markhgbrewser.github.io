@@ -1,0 +1,50 @@
+body {
+  background:
+    linear-gradient(135deg, lime 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, lime 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, lime 25%, transparent 25%),
+    linear-gradient(45deg, lime 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: purple;
+}
+
+.heading {
+  text-align: center;
+  font-size: 100px;
+  color: orange;
+  font-weight: bolder;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
